@@ -9,7 +9,7 @@ if (data.length === 1) {
 }
 // if length is 2, add copies of slides
 let people = [...data];
-if (data.length === 2) {
+if (data.length === 3) {
   people = [...data, ...data];
 }
 container.innerHTML = people
@@ -22,7 +22,7 @@ container.innerHTML = people
     if (slideIndex === people.length - 1) {
       position = "last";
     }
-    if (data.length <= 1) {
+    if (data.length <= 2) {
       position = "active";
     }
     return `<article class="slide ${position}">
