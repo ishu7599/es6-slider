@@ -17,13 +17,13 @@ container.innerHTML = people
     const { img, name, job, text } = person;
     let position = "next";
     if (slideIndex === 0) {
-      position = "active";
-    }
-    if (slideIndex === people.length - 1) {
       position = "last";
     }
+    if (slideIndex === people.length - 1) {
+      position = "active ";
+    }
     if (data.length <= 1) {
-      position = "active";
+      position = "last";
     }
     return `<article class="slide ${position}">
   <img src=${img} class="img" alt="${name}"/>
