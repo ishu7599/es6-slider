@@ -9,7 +9,7 @@ if (data.length === 1) {
 }
 // if length is 2, add copies of slides
 let people = [...data];
-if (data.length === 3) {
+if (data.length === 2) {
   people = [...data, ...data];
 }
 container.innerHTML = people
@@ -27,7 +27,7 @@ container.innerHTML = people
     }
     return `<article class="slide ${position}">
   <img src=${img} class="img" alt="${name}"/>
-  <h4>${name}</h4>
+  <h3>${name}</h3>
   <p class="title">${job}</p>
   <p class="text">
    ${text}
