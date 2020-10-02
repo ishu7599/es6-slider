@@ -9,7 +9,7 @@ if (data.length === 1) {
 }
 // if length is 2, add copies of slides
 let people = [...data];
-if (data.length === 2) {
+if (data.length === 3) {
   people = [...data, ...data];
 }
 container.innerHTML = people
